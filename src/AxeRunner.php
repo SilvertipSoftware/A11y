@@ -5,7 +5,8 @@ namespace Silvertip\A11y;
 use Illuminate\Support\Traits\Tappable;
 use Laravel\Dusk\Browser;
 
-class AxeRunner {
+class AxeRunner
+{
     use Tappable;
 
     protected $driver;
@@ -29,7 +30,8 @@ class AxeRunner {
         window.axe.run(document, options).then(callback);
     ";
 
-    public function __construct($driver, $context = null, $options = []) {
+    public function __construct($driver, $context = null, $options = [])
+    {
         $this->driver = $driver;
         $this->didInject = false;
 
@@ -37,14 +39,16 @@ class AxeRunner {
         $this->options = array_merge(static::$defaultOptions, $options);
     }
 
-    public function setContext($context) {
+    public function setContext($context)
+    {
         if ($this->context != $context) {
             $this->results = [];
         }
         $this->context = $context;
     }
 
-    public function analyze($inject = true) {
+    public function analyze($inject = true)
+    {
         if ($inject) {
             $this->injectAxe();
         }
@@ -52,15 +56,18 @@ class AxeRunner {
         return $this;
     }
 
-    public function hasViolations() {
+    public function hasViolations()
+    {
         return count($this->results['violations']) > 0;
     }
 
-    public function getResults() {
+    public function getResults()
+    {
         return $this->results;
     }
 
-    protected function injectAxe() {
+    protected function injectAxe()
+    {
         $this->driver
             ->executeScript(
                 file_get_contents(
@@ -70,7 +77,8 @@ class AxeRunner {
         $this->didInject = true;
     }
 
-    protected function runAxe() {
+    protected function runAxe()
+    {
         return $this->driver
             ->executeAsyncScript(static::$runnerSnippet, [$this->context, $this->options]);
     }

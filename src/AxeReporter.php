@@ -4,9 +4,11 @@ namespace Silvertip\A11y;
 
 use Illuminate\Support\Arr;
 
-class AxeReporter {
+class AxeReporter
+{
 
-    public static function report($results) {
+    public static function report($results)
+    {
         $lines = array_map(function ($violation) {
             return $violation['id'] . ': ' . $violation['help'] . "\n" .
                 implode(
