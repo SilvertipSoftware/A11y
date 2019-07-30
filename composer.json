@@ -29,5 +29,5 @@
         "psr-4": {
             "Silvertip\\A11y\\Tests\\": "tests"
         }
-    },
+    }
 }
