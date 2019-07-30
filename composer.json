@@ -1,6 +1,6 @@
 {
     "name": "silvertip/a11y",
-    "description": ":description",
+    "description": "Enable A11y tests to your Laravel project.",
     "license": "WTFPL",
     "authors": [
         {
