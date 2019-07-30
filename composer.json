@@ -30,14 +30,4 @@
             "Silvertip\\A11y\\Tests\\": "tests"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Silvertip\\A11y\\A11yServiceProvider"
-            ],
-            "aliases": {
-                "A11y": "Silvertip\\A11y\\Facades\\A11y"
-            }
-        }
-    }
 }
