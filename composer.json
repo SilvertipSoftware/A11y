@@ -1,0 +1,43 @@
+{
+    "name": "silvertip/a11y",
+    "description": ":description",
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Andre Sonnichsen",
+            "email": "andre@silvertipsoftware.com",
+            "homepage": "http://silvertipsoftware.com/"
+        }
+    ],
+    "homepage": "https://github.com/SilvertipSoftware/A11y",
+    "keywords": ["Laravel", "A11y"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Silvertip\\A11y\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Silvertip\\A11y\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Silvertip\\A11y\\A11yServiceProvider"
+            ],
+            "aliases": {
+                "A11y": "Silvertip\\A11y\\Facades\\A11y"
+            }
+        }
+    }
+}
