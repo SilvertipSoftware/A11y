@@ -10,7 +10,7 @@ This is where your description should go. Take a look at [contributing.md](contr
 Via Composer
 
 ``` bash
-$ composer require silvertip/a11y
+$ composer require silvertipsoftware/a11y
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ In your your Laravel project's `AppServiceProvider.php`, add a `Browser::mixin` 
         ...
 
         if ($this->app->environment('local', 'testing')) {
-            Browser::mixin(new \Silvertip\A11y\BrowserMixins);
+            Browser::mixin(new \SilvertipSoftware\A11y\BrowserMixins);
         }
 
         ...
@@ -49,10 +49,10 @@ If you discover any security related issues, please email andre@silvertipsoftwar
 
 WTFPL. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/silvertip/a11y.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/silvertip/a11y.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/silvertipsoftware/a11y.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/silvertipsoftware/a11y.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/silvertip/a11y
-[link-downloads]: https://packagist.org/packages/silvertip/a11y
-[link-author]: https://github.com/silvertip
+[link-packagist]: https://packagist.org/packages/silvertipsoftware/a11y
+[link-downloads]: https://packagist.org/packages/silvertipsoftware/a11y
+[link-author]: https://github.com/aksonnic
 [link-contributors]: ../../contributors

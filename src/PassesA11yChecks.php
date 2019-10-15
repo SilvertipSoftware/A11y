@@ -1,8 +1,7 @@
 <?php
 
-namespace Silvertip\A11y;
+namespace SilvertipSoftware\A11y;
 
-use Illuminate\Support\Arr;
 use PHPUnit\Framework\Constraint\Constraint;
 
 class PassesA11yChecks extends Constraint

@@ -1,6 +1,6 @@
 <?php
 
-namespace Silvertip\A11y\Facades;
+namespace SilvertipSoftware\A11y\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

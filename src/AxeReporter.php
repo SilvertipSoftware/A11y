@@ -1,6 +1,6 @@
 <?php
 
-namespace Silvertip\A11y;
+namespace SilvertipSoftware\A11y;
 
 use Illuminate\Support\Arr;
 

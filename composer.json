@@ -1,5 +1,5 @@
 {
-    "name": "silvertip/a11y",
+    "name": "silvertipsoftware/a11y",
     "description": "Enable A11y tests for your Laravel project.",
     "license": "WTFPL",
     "authors": [
@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Silvertip\\A11y\\": "src/"
+            "SilvertipSoftware\\A11y\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Silvertip\\A11y\\Tests\\": "tests"
+            "SilvertipSoftware\\A11y\\Tests\\": "tests"
         }
     }
 }

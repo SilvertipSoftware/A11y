@@ -1,9 +1,8 @@
 <?php
 
-namespace Silvertip\A11y;
+namespace SilvertipSoftware\A11y;
 
 use Illuminate\Support\Traits\Tappable;
-use Laravel\Dusk\Browser;
 
 class AxeRunner
 {
