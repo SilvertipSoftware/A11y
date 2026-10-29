@@ -41,6 +41,7 @@ class PassesA11yChecks extends Constraint
     protected function getRunner()
     {
         if (!isset($this->browser->axeRunner)) {
+            // TODO: triggers “creation of dynamic property” deprecation On PHP 8.2+
             $this->browser->axeRunner = new AxeRunner($this->browser->driver);
         }
 
